@@ -2,4 +2,4 @@
 
 ## supports de cours pour Terminale NSI 2020-2021
 - Chap01 : RÉCURSIVITÉ
-- Chap01 : MODULARITÉ
+- Chap02 : MODULARITÉ
