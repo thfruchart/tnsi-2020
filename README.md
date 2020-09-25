@@ -1,7 +1,8 @@
 # tnsi-2020
 ## Lien vers QCM
-[Evaluation 1](https://genumsi.inria.fr/qcm.php?h=86957331e53102ed79c0c740521aa4cc)
-[Evaluation 2](https://genumsi.inria.fr/qcm.php?h=2dc4c8508c1aa38e2a4eeb5913222f91)
+[Réviser l'Evaluation 1](https://genumsi.inria.fr/qcm.php?h=73113fe46b31071fe3b0619481a2d58a)
+
+[Réviser l'Evaluation 2](https://genumsi.inria.fr/qcm.php?h=a78d42e930cb66158eaccce2d2bb034d)
 
 [Dictionnaire - révision](https://genumsi.inria.fr/qcm.php?h=0a49e141026bec9f60d056b4515dfbc9)
 
