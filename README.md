@@ -1,5 +1,7 @@
 # tnsi-2020
 ## Lien vers QCM
+[Rattrapage dictionnaire](https://genumsi.inria.fr/qcm.php?h=d3837f366376d17bc337a6bc599d815d)
+
 [Réviser l'Evaluation 1](https://genumsi.inria.fr/qcm.php?h=73113fe46b31071fe3b0619481a2d58a)
 
 [Réviser l'Evaluation 2](https://genumsi.inria.fr/qcm.php?h=a78d42e930cb66158eaccce2d2bb034d)
