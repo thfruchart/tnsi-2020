@@ -14,4 +14,9 @@
 - Chap02 : MODULARITÉ
 - Chap03 : Programmation Orientée Objet
 - Chap04 : Mise au point de programmes
+- Chap05 : [Programmation fonctionelle](https://github.com/thfruchart/tnsi-2020/tree/master/Chap05)
+- Chap06 : [Structures linéaires : Piles](https://github.com/thfruchart/tnsi-2020/tree/master/Chap06)
+- Chap07 : [Piles et Files](https://github.com/thfruchart/tnsi-2020/tree/master/Chap07)
+- Chap08 : [Arbres binaires](https://github.com/thfruchart/tnsi-2020/tree/master/Chap08)
+
 
