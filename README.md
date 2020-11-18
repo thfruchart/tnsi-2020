@@ -7,7 +7,7 @@
 - Chap03 : [Programmation Orientée Objet](https://github.com/thfruchart/tnsi-2020/tree/master/Chap03)
 - Chap04 : [Mise au point de programmes](https://github.com/thfruchart/tnsi-2020/tree/master/Chap04)
 - Chap05 : [Programmation fonctionelle](https://github.com/thfruchart/tnsi-2020/tree/master/Chap05)
-- Chap06 : [Structures linéaires : Piles](https://github.com/thfruchart/tnsi-2020/tree/master/Chap06)
+- Chap06 : [Structures linéaires : Listes chaînée](https://github.com/thfruchart/tnsi-2020/tree/master/Chap06)
 - Chap07 : [Piles et Files](https://github.com/thfruchart/tnsi-2020/tree/master/Chap07)
 - Chap08 : [Arbres binaires](https://github.com/thfruchart/tnsi-2020/tree/master/Chap08)
 
