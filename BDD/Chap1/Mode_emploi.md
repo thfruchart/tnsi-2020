@@ -1,4 +1,5 @@
 1. Démarrer XAMP
+
   1. xamp est exécutable directement sur clé usb, ou sur disque dur
   2. avec l'explorateur de fichier, ouvrir le répertoire xamp et exécuter **xampp_control**
   3. démarrer Apache en cliquant sur le boutou "START" 
