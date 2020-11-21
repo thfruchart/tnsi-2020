@@ -7,6 +7,9 @@
    1. ouvrir un navigateur : Chrome, Edge, FireFox... 
    2. dans la **barre d'adresse** du navigateur, taper  `localhost`
    3. la page `Welcome to XAMP` s'ouvre : cliquer sur phpMyAdmin (en haut à droite!)
+3. Sélectionner la base `test` dans le menu de gauche (en bas). Dans cette base, plusieurs tables ont été chargée, pour simuler le fonctionnement d'une bibliothèque.
+
+Si vous avez suivi toutes ces étapes, vous êtes prêts à faire le TP1
    
   
   
