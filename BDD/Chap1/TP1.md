@@ -23,17 +23,17 @@ où `table` est le nom d'une table de la base de données
 
 `*` permet de sélectionner toutes les colonnes d'une table.
 
-Exécuter maintenant : 
+#### Exécuter maintenant : 
 `SELECT nom, prenom FROM usager ORDER BY nom`
 
 **ORDER BY** permet un affichage par ordre croissant sur le critère fourni : ici le nom.
 
-Comparer avec : 
+#### Comparer avec : 
 `SELECT nom, prenom FROM usager ORDER BY prenom DESC`
 
 **ORDER BY** accepte deux paramètres : **ASC** (par défaut : ordre croissant) ou **DESC** (ordre décroissant).
 
-[Question1] : expliquer l'affichage obtenu avec : 
+#### [Question1]() : expliquer l'affichage obtenu avec : 
 `SELECT nom, prenom FROM usager ORDER BY cp DESC`
 
 *AIDE* vous pouvez comparer avec `SELECT nom, prenom, cp FROM usager ORDER BY cp DESC`
