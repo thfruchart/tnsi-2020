@@ -15,11 +15,13 @@ Comparer l'exécution des commandes suivantes :
 * `SELECT nom, prenom FROM usager`
 
 La syntaxe de la commande est la suivante : 
-**SELECT** col1, col2  **FROM** table 
+**SELECT** `col1, col2`  **FROM** `table` 
 
-où col1, col2 sont les noms des colonnes à sélectionner
+où `col1, col2` sont les noms des colonnes à sélectionner. Le nombre de colonnes n'est pas limité, il suffit de séparer les noms de colonne par des virgules.
 
-et où table est le nom d'une table de la base de données.
+et où `table` est le nom d'une table de la base de données.
+
+**SELECT `*`** permet de sélectionner toutes les colonnes d'une table.
 
 ### SELECT ...  FROM ... WHERE
 
