@@ -10,7 +10,16 @@ Tester chacune des requêtes suivantes, et observer le résultat
 * comme son nom l'indique, SELECT va permettre d'afficher le résultat d'une "sélection" de certaines données dans la base
 
 ### SELECT ...  FROM
+Comparer l'exécution des commandes suivantes : 
+* `SELECT * FROM usager`
+* `SELECT nom, prenom FROM usager`
 
+La syntaxe de la commande est la suivante : 
+**SELECT** col1, col2  **FROM** table 
+
+où col1, col2 sont les noms des colonnes à sélectionner
+
+et où table est le nom d'une table de la base de données.
 
 ### SELECT ...  FROM ... WHERE
 
