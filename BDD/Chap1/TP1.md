@@ -1,5 +1,4 @@
-# TP1 : interroger une base de données
-
+# TP1 : interroger une base de données: requêtes simples
 Pour commencer, sélectionner la base `test` dans le menu de phpMyAdmin, à gauche. Cette base va nous servir pour l'ensemble du chapitre.
 
 
