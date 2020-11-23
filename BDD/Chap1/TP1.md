@@ -96,4 +96,14 @@ Ces fonctions sont appliquées à l'ensemble des valeurs d'une colonne, et le r�
 
 **SUM** renvoie la moyenne (average) des valeurs d'une colonne. 
 
+# Exercice
+Répondre à chaque question en écrivant une requête SQL permettant d'obtenir la réponse.
+
+Toutes les questions se réfèrent à la base de données **test** contenant les tables auteur, auteur_de, emprunt, livre, usager
+
+1. Afficher le nombre de lignes dans la table **auteurs**
+2. Afficher le nom de tous les **auteurs** dont le prénom est 'René'
+3. Afficher (sans répétition) le nom de tous les **auteurs** dont le prénom est 'René'
+
+
 
