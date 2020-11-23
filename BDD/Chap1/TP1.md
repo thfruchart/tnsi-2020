@@ -96,9 +96,9 @@ Ces fonctions sont appliquées à l'ensemble des valeurs d'une colonne, et le r�
 **SUM** renvoie la moyenne (average) des valeurs d'une colonne. 
 
 Exemple: pour trouver l'année du livre le plus "ancien" dans la table **livre**  et l'année du livre le plus récent: 
-* `SELECT MIN(annee) AS ancien FROM livre;`
+* `SELECT MIN(annee) FROM livre;`
 * `SELECT MAX(annee) AS recent FROM livre;`
-   * **AS** sert à définir un alias : cela permet de renommer une colonne renvoyée par SELECT
+   * dans la dernière requête, **AS** sert à définir un alias : cela permet de renommer une colonne renvoyée par SELECT. Comparer l'affichage du résultat des deux requêtes pour visualiser la différence.
 
 # Exercice
 Répondre à chaque question en écrivant une requête SQL permettant d'obtenir la réponse.
