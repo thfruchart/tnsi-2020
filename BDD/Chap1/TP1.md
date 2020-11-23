@@ -96,14 +96,20 @@ Ces fonctions sont appliquées à l'ensemble des valeurs d'une colonne, et le r�
 
 **SUM** renvoie la moyenne (average) des valeurs d'une colonne. 
 
+Exemple: pour trouver l'année du livre le plus "ancien" dans la table **livre**  et l'année du livre le plus récent: 
+* `SELECT MIN(annee) AS ancien FROM livre;`
+* `SELECT MAX(annee) AS recent FROM livre;`
+   * **AS** sert à définir un alias : cela permet de renommer une colonne renvoyée par SELECT
+
 # Exercice
 Répondre à chaque question en écrivant une requête SQL permettant d'obtenir la réponse.
 
 Toutes les questions se réfèrent à la base de données **test** contenant les tables auteur, auteur_de, emprunt, livre, usager
 
-1. Afficher le nombre de lignes dans la table **auteurs**
+1. Afficher le nombre de lignes de la table **auteurs**
 2. Afficher le nom de tous les **auteurs** dont le prénom est 'René'
 3. Afficher (sans répétition) le nom de tous les **auteurs** dont le prénom est 'René'
+4. Afficher le nom et le prénom de tous les **auteurs** dont le prénom commence par G
 
 
 
