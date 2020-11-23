@@ -46,7 +46,7 @@ Comparer l'exécution des commandes suivantes :
 ### SELECT ...  FROM ... WHERE
 #### Exécuter maintenant : 
 * `SELECT * FROM livre`
-   * combien de livre y a-t-il dans la table "livre" ?
+   * combien de livres y a-t-il dans la table "livre" ?
    * combien sont affichés dans phpMyAdmin ?
    
 #### Comparer avec : 
@@ -58,5 +58,21 @@ Comparer l'exécution des commandes suivantes :
 Par exemple, pour obtenir les titres des livres qui commencent par A, il suffit d'écrire : 
 * `SELECT titre FROM livre WHERE titre < 'B'`
    * on remarque que le titre "1984" est classé comme étant inférieur à "B", puisque les codes ASCII des chiffres sont inférieurs à ceux des lettres!
+
+#### Comparer les requêtes : 
+* `SELECT * FROM `livre` WHERE titre = 'Astérix'`
+* `SELECT * FROM `livre` WHERE titre LIKE 'Astérix%'`
+   * aucun livre n'a pour titre exace 'Astérix'
+   * plusieurs livres ont pour titre 'Astérix' suivi par un certain nombre d'autres caractères
+   * le caractère spécial `%` signifie ici : un nombre quelconque de caractères
+   * le caractère spécial `_` signifie ici : exactement un caractère
+  
+  
+Ainsi, on pourra chercher le titre Œdipe roi en mettant un joker `_` à la place du premier caractère Œ  
+* `SELECT * FROM livre WHERE titre LIKE '_dipe roi'`
+
+On pourra chercher les livres dont le titre contient Astérix (précédé ou suivi d'un ou plusieurs caractères) avec : 
+* `SELECT * FROM `livre` WHERE titre LIKE '%Astérix%'`
+   * remarquer le "double joker" : % au début et à la fin de la chaîne.
 
 ### Jointure
