@@ -103,6 +103,8 @@ Exemple: pour trouver l'année du livre le plus "ancien" dans la table **livre**
 # Exercice
 Répondre à chaque question en écrivant une requête SQL permettant d'obtenir la réponse.
 
+Une fois la réponse validée, **recopier** la totalité de la requête sur feuille.
+
 Toutes les questions se réfèrent à la base de données **test** contenant les tables auteur, auteur_de, emprunt, livre, usager
 
 1. Afficher le nombre de lignes de la table **auteurs**
