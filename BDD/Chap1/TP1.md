@@ -1,6 +1,12 @@
 # TP1 : interroger une base de données
-Pour découvrir l'utilisation d'une base de données, vous allez **saisir des requêtes** : pour cela ouvrez la **Console de requêtes SQL** située tout en bas de l'écran dans phpMyAdmin. Ce que vous aurez à saisir sera présenté de la manière suivante dans ce docuement :
+
+Pour commencer, sélectionner la base `test` dans le menu de phpMyAdmin, à gauche. Cette base va nous servir pour l'ensemble du chapitre.
+
+
+Pour découvrir l'utilisation d'une base de données, vous allez **saisir des requêtes** : pour cela ouvrez la **Console de requêtes SQL** située tout en bas de l'écran dans phpMyAdmin. Ce que vous aurez à saisir sera présenté de la manière suivante dans ce document :
 * `commande à saisir dans la console de requêtes SQL`
+
+Vous pouvez également utiliser l'onglet SQL, dans lequel une aide syntaxique est fournie. 
 
 Tester chacune des requêtes suivantes, et observer le résultat
 ## SELECT
@@ -38,5 +44,19 @@ Comparer l'exécution des commandes suivantes :
 
 
 ### SELECT ...  FROM ... WHERE
+#### Exécuter maintenant : 
+* `SELECT * FROM livre`
+   * combien de livre y a-t-il dans la table "livre" ?
+   * combien sont affichés dans phpMyAdmin ?
+   
+#### Comparer avec : 
+* `SELECT * FROM livre WHERE annee>=2018`
+   * la clause `WHERE` permet de restreindre la recherche suivant certains critères
+   * pour une colonne de type numérique (comme année) on peut utiliser les opérateurs habituels de comparaison
+   * pour une colonne de type texte (comme titre) les opérateurs `<` et `>` permettent de faire des comparaisons dans l'ordre alphabétique.
+   
+Par exemple, pour obtenir les titres des livres qui commencent par A, il suffit d'écrire : 
+* `SELECT titre FROM livre WHERE titre < 'B'`
+   * on remarque que le titre "1984" est classé comme étant inférieur à "B", puisque les codes ASCII des chiffres sont inférieurs à ceux des lettres!
 
 ### Jointure
