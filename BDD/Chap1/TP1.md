@@ -61,7 +61,7 @@ Comparer l'exécution des commandes suivantes :
 #### Comparer avec : 
 * `SELECT * FROM livre WHERE annee>=2018;`
    * la clause `WHERE` permet de restreindre la recherche suivant certains critères
-   * pour une colonne de type numérique (comme année) on peut utiliser les opérateurs habituels de comparaison
+   * pour une colonne de type numérique (comme année) on peut utiliser les opérateurs habituels de comparaison : `=`   `!=` `<`   `>` `<=`   `>=` et les opérateurs booléens `AND`   `OR` `NOT`
    * pour une colonne de type texte (comme titre) les opérateurs `<` et `>` permettent de faire des comparaisons dans l'ordre alphabétique.
    
 Par exemple, pour obtenir les titres des livres qui commencent par A, il suffit d'écrire : 
@@ -71,13 +71,13 @@ Par exemple, pour obtenir les titres des livres qui commencent par A, il suffit 
 #### Comparer les requêtes : 
 * `SELECT * FROM `livre` WHERE titre = 'Astérix';`
 * `SELECT * FROM `livre` WHERE titre LIKE 'Astérix%';`
-   * aucun livre n'a pour titre exace 'Astérix'
+   * aucun livre n'a pour titre exact 'Astérix'
    * plusieurs livres ont pour titre 'Astérix' suivi par un certain nombre d'autres caractères
    * le caractère spécial `%` signifie ici : un nombre quelconque de caractères
    * le caractère spécial `_` signifie ici : exactement un caractère
   
   
-Ainsi, on pourra chercher le titre Œdipe roi en mettant un joker `_` à la place du premier caractère Œ  
+Ainsi, on pourra chercher le titre "Œdipe roi" en mettant le carctère spécial `_` à la place du premier caractère Œ  
 * `SELECT * FROM livre WHERE titre LIKE '_dipe roi';`
 
 On pourra chercher les livres dont le titre contient Astérix (précédé ou suivi d'un ou plusieurs caractères) avec : 
@@ -85,7 +85,7 @@ On pourra chercher les livres dont le titre contient Astérix (précédé ou sui
    * remarquer le "double joker" : % au début et à la fin de la chaîne.
 
 #### Fonctions d'agrégations
-Au lieu de renvoyer une "table", une requête SELECT peut permettre d'appeler une fonction d'agrégation, comme MAX, MIN, COUNT, AVG ... 
+Au lieu de renvoyer une "table", une requête SELECT peut permettre d'appeler une fonction d'agrégation, comme MAX, MIN, COUNT, AVG, SUM ... 
 Ces fonctions sont appliquées à l'ensemble des valeurs d'une colonne, et le résultat est affiché avec SELECT.
 
 **MAX** retourne le maximum d'une colonne, **MIN** le minimum
@@ -94,4 +94,6 @@ Ces fonctions sont appliquées à l'ensemble des valeurs d'une colonne, et le r�
 
 **AVG** renvoie la moyenne (average) des valeurs d'une colonne. 
 
-### Jointure
+**SUM** renvoie la moyenne (average) des valeurs d'une colonne. 
+
+
