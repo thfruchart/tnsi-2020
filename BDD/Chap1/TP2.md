@@ -34,16 +34,17 @@ Si on souhaite pouvoir connaître le titre du livre emprunté par un usager, on 
 #### Exécuter maintenant
 * `SELECT usager.nom, usager.prenom, livre.titre, emprunt.retour FROM usager JOIN emprunt ON usager.code_barre = emprunt.code_barre JOIN livre ON emprunt.isbn = livre.isbn;`
 
-Dans cette requête, on a joint trois tables : 
-* usager
-* emprunt
-* titre
-On "met bout à bout" toutes les lignes pour lesquelles 
-* le code barre de l'usager est identique dans les tables usager et emprunt
-* ET
-* l'isbn est identique dans les tableus emprunt et livre
-On obtient ainsi une grande vue regoupant trois tables dont on conserve ici 
-* nom prénom  de l'usager
-* titre du livre
-* date de retour (de la table emprunt)
+Dans cette requête, 
+* on a joint trois tables : 
+   * usager
+   * emprunt
+   * titre
+* On "met bout à bout" toutes les lignes pour lesquelles 
+   * le code barre de l'usager est identique dans les tables usager et emprunt
+   * ET
+   * l'isbn est identique dans les tableus emprunt et livre
+* On obtient ainsi une grande vue regoupant trois tables dont on conserve ici 
+   * nom prénom  de l'usager
+   * titre du livre
+   * date de retour (de la table emprunt)
 
