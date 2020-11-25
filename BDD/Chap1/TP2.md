@@ -38,13 +38,18 @@ Dans cette requête,
 * on a joint trois tables, comme l'indique la syntaxe `FROM usager JOIN emprunt ... JOIN livre ...`
    * usager
    * emprunt
-   * titre
+   * livre
 * On "met bout à bout" toutes les lignes pour lesquelles 
    * le code barre de l'usager est identique dans les tables usager et emprunt
    * ET
-   * l'isbn est identique dans les tableus emprunt et livre
-* On obtient ainsi une grande vue regoupant trois tables dont on conserve ici 
+   * l'isbn est identique dans les tables emprunt et livre
+* On obtient ainsi une grande vue regoupant les trois tables dont on sélectionne ici 
    * nom prénom  de l'usager
    * titre du livre
    * date de retour (de la table emprunt)
+
+Il est possible de préciser la recherche en ajoutant une clause `WHERE`, comme dans l'exemple ci-dessous qui affiche le nom prénom et titre pour les emprunts dont la date de retour est fixée au premier janvier 2020
+* `SELECT usager.nom, usager.prenom, livre.titre, emprunt.retour FROM usager JOIN emprunt ON usager.code_barre = emprunt.code_barre JOIN livre ON emprunt.isbn = livre.isbn WHERE emprunt.retour='2020-01-01';`
+
+# Exercice 2
 
