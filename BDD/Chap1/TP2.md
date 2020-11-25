@@ -30,7 +30,7 @@ Dans l'exemple considéré :
 ### Jointures mutliples
 Si on souhaite pouvoir connaître le titre du livre emprunté par un usager, on peut utiliser une double jointure :
 #### Exécuter maintenant
-* `SELECT usager.nom, usager.prenom, livre.titre, emprunt.retour 
+* ```SELECT usager.nom, usager.prenom, livre.titre, emprunt.retour 
 FROM usager 
 JOIN emprunt ON usager.code_barre = emprunt.code_barre 
-JOIN livre ON emprunt.isbn = livre.isbn;`
+JOIN livre ON emprunt.isbn = livre.isbn;```
