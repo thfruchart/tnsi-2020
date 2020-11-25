@@ -48,8 +48,24 @@ Dans cette requête,
    * titre du livre
    * date de retour (de la table emprunt)
 
-Il est possible de préciser la recherche en ajoutant une clause `WHERE`, comme dans l'exemple ci-dessous qui affiche le nom prénom et titre pour les emprunts dont la date de retour est fixée au premier janvier 2020
+Il est possible de préciser la recherche en ajoutant une clause `WHERE`, comme dans l'exemple ci-dessous qui affiche le nom prénom et titre pour les emprunts dont la date de retour est fixée au premier janvier 2020 (cette date est notée au format AAAA-JJ-MM donc 2020-01-01)
 * `SELECT usager.nom, usager.prenom, livre.titre, emprunt.retour FROM usager JOIN emprunt ON usager.code_barre = emprunt.code_barre JOIN livre ON emprunt.isbn = livre.isbn WHERE emprunt.retour='2020-01-01';`
 
 # Exercice 2
+Répondre à chaque question en écrivant une requête SQL permettant d'obtenir la réponse.
 
+Une fois la réponse validée, **recopier** la totalité de la requête sur feuille.
+
+Toutes les questions se réfèrent à la base de données **test** contenant les tables auteur, auteur_de, emprunt, livre, usager
+On observera que la table `auteur_de` permet de joindre :
+* un auteur, repéré par son n° :  `a_id`
+* un livre, repéré par son `isbn`
+
+1. Afficher le nom et le prénom de l'auteur du livre '1984'
+2. Afficher le titre de tous les livres dont l'auteur a pour nom 'Barjavel'
+3. Afficher le titre, le nom et le prénom de l'auteur de tous les livres écrits par quelqu'un dont le prénom est 'René'
+4. Afficher le titre de tous les livres empruntés à rendre avant le 31/03/2020
+5. Afficher le nom et le prénom des usagers ayant emprunté un livre
+6. Même requête que la précédente, en supprimant les doublons
+7. Même requête que la précédent, en affichant les noms triés par ordre alphabétique 
+8. Afficher le nom et le prénom de tous les usagers habitant le 5ème arrondissement (code postal = 75005) ayant emprunté un livre : on fera également afficher le titre du livre et la date de retour prévue. 
