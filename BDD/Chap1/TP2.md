@@ -56,7 +56,7 @@ Répondre à chaque question en écrivant une requête SQL permettant d'obtenir 
 
 Une fois la réponse validée, **recopier** la totalité de la requête sur feuille.
 
-Toutes les questions se réfèrent à la base de données **test** contenant les tables auteur, auteur_de, emprunt, livre, usager
+Toutes les questions se réfèrent à la base de données **test** contenant les tables `auteur`, `auteur_de`, `emprunt`, `livre`, `usager`.
 On observera que la table `auteur_de` permet de joindre :
 * un auteur, repéré par son n° :  `a_id`
 * un livre, repéré par son `isbn`
