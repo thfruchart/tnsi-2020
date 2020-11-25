@@ -35,7 +35,7 @@ Si on souhaite pouvoir connaître le titre du livre emprunté par un usager, on 
 * `SELECT usager.nom, usager.prenom, livre.titre, emprunt.retour FROM usager JOIN emprunt ON usager.code_barre = emprunt.code_barre JOIN livre ON emprunt.isbn = livre.isbn;`
 
 Dans cette requête, 
-* on a joint trois tables : 
+* on a joint trois tables, comme l'indique la syntaxe `FROM usager JOIN emprunt ... JOIN livre ...`
    * usager
    * emprunt
    * titre
