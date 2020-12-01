@@ -24,6 +24,11 @@ On distingue trois sortes de "modifications" :
 Exécuter les requêtes suivantes : 
 * `SELECT * FROM `emprunt` WHERE retour='2020-01-01'`
 
+|code_barre	|isbn	|retour	|
+|:--|:--|:--|
+|934701281931582	|978-2260019183	|2020-01-01	|
+|934701281931582	|978-2371240087	|2020-01-01|
+
 On obtient les deux lignes de la table emprunt pour lesquelles le retour est fixé au premier janvier 2020.
 
 ## 2. Ajout de nouvelles lignes
