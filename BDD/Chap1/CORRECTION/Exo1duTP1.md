@@ -27,10 +27,10 @@ WHERE annee < 2000 AND titre LIKE 'L%';`
 
 6. Afficher le titre, l'isbn et l'année de tous les **livres** dont l'éditeur est **Dargaud**, classés par année croissante.
 
-`SELECT titre, isbn, annee FROM `livre`
+`SELECT titre, isbn, annee FROM livre
 WHERE editeur = 'Dargaud'
 ORDER BY annee ;`
 
 7. Afficher le titre, l'isbn et l'année de tous les **livres** dont l'éditeur est **J'ai lu**, classés par année décroissante.
 
-`SELECT titre, isbn, annee FROM `livre` WHERE editeur = 'J\'ai lu' ORDER BY annee DESC`
+`SELECT titre, isbn, annee FROM livre WHERE editeur = 'J\'ai lu' ORDER BY annee DESC`
