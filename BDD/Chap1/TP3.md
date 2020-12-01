@@ -1,0 +1,25 @@
+# TP3 : modifier le contenu d'une table
+
+Avant de commencer le TP, on pourra relire le [mode d'emploi](https://github.com/thfruchart/tnsi-2020/blob/master/BDD/Chap1/Mode_emploi.md)
+
+Les exemples sont tous tirés de la base de données `test` contenant les données d'une bibliothèque fictive.
+
+### que peut-on modifier dans une base de données ? 
+
+Toutes les modifications présentées dans ce TP portent sur les **lignes** d'une **table**.
+
+De manière générale, une fois qu'une base de données est créée, les intitulés des colonnes des tables (appelés "champs") ne sont plus modifiées. 
+Seules les lignes sont modifiées de façon ordinaire, pour mettre à jour les informatios stockées dans la base.
+
+On distingue trois sortes de "modifications" :
+1. Changer certaines valeurs d'une ligne existante
+2. Ajouter une nouvelle ligne dans une table
+3. Supprimer une ou plusieurs lignes d'une table.
+
+
+
+## 1. Modification de certaines lignes
+
+## 2. Ajout de nouvelles lignes
+
+## 3. Suppression de lignes
