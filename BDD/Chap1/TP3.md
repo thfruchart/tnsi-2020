@@ -32,7 +32,7 @@ On obtient les deux lignes de la table emprunt pour lesquelles le retour est fix
 |934701281931582	|978-2371240087	|2020-01-01|
 
 
-L'objectif est de "prolonger ces deux emprunts pour un mois", c'est à dire de modifier uniquement la date de retour, pour la mettre au 1er février 2020.
+L'objectif est de "prolonger  pour un mois" l'emprunt du livre dont l'isbn est 978-2260019183, c'est à dire de modifier uniquement la date de retour de cet ouvrage au 1er février 2020.
 
 Exécuter : 
 * `UPDATE emprunt SET retour='2020-02-01' WHERE isbn=  '978-2260019183';`
@@ -47,14 +47,15 @@ On peut vérifier que la date de retour pour cet ouvrage a bien été modifiée.
 Exécuter : 
 * `SELECT * FROM emprunt WHERE retour='2020-01-01';`
 
-On obtient alors une seule ligne de la table emprunt pour laquelle le retour reste fixé au premier janvier 2020. En effet, nous avons modifié une seule ligne de la table emprunt. 
+On obtient alors une seule ligne de la table emprunt pour laquelle le retour reste fixé au premier janvier 2020. 
+En effet, nous avons modifié qu'une seule ligne de la table emprunt. 
 
 |code_barre	|isbn	|retour	|
 |:--|:--|:--|
 |934701281931582	|978-2371240087	|2020-01-01|
 
 
-
+#### prolonger tous les emprunts d'un usager
 
 
 
