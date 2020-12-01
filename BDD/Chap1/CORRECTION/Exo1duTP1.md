@@ -5,7 +5,7 @@
 
 `SELECT COUNT(*) FROM auteur;`
 ou
-`SELECT COUNT(nom) AS nbdelignnes FROM auteurs;`
+`SELECT COUNT(nom) AS nbdelignes FROM auteurs;`
 
 2. Afficher le nom de tous les **auteurs** dont le prénom est 'René'
 
