@@ -136,3 +136,14 @@ Cela permet ensuite d'ajouter dans la base l'emprunt de ce livre par Julien
 * `INSERT INTO emprunt(code_barre, isbn, retour) VALUES ('782124241492509', '978-0547249643', '2020-12-31');`
 
 Cette insertion se fait alors sans provoquer d'erreur.
+
+## Ce que peut vérifier le système de gestion de la base de données
+Exécuter **d'abord**: 
+* `ALTER TABLE `emprunt` ADD CONSTRAINT `fk_code_barre` FOREIGN KEY (`code_barre`) REFERENCES `usager`(`code_barre`) ON DELETE RESTRICT ON UPDATE RESTRICT;`
+
+**Puis** essayer la requête : 
+* `DELETE FROM usager WHERE code_barre='917547585216771';`
+
+Noter le message d'erreur : 
+
+#1451 - Cannot delete or update a parent row: a foreign key constraint fails (`test`.`emprunt`, CONSTRAINT `fk_code_barre` FOREIGN KEY (`code_barre`) REFERENCES `usager` (`code_barre`))
