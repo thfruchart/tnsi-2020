@@ -57,6 +57,7 @@ En effet, nous n'avons modifié qu'une seule ligne de la table emprunt.
 
 #### prolonger tous les emprunts d'un usager
 On souhaite prolonger jusqu'au 18 mars 2020 tous les livres empruntés par l'usager dont le code barre est : 035184062854281
+
 Exécuter : 
 * `SELECT * FROM emprunt WHERE code_barre='035184062854281';`
 * `UPDATE emprunt SET retour='2020-03-18' WHERE code_barre='035184062854281';`
@@ -73,14 +74,15 @@ Remarquer que l'exécution de la requête UPDATE modifie **3** lignes.
 |035184062854281|	978-2745989857|	2020-03-18	|
 
 ### A RETENIR
-La syntaxe d'une modification de certaines colonnes dans une (ou plusieurs) ligne(s) :
+La syntaxe d'une modification de certaines valeurs dans une (ou plusieurs) ligne(s) :
 
-**`UPDATE nom_de_la_table  SET  nom_de_colonne1 = valeur1 , nom_de_colonne2 = valeur2 WHERE condition;`**
+**`UPDATE nom_de_la_table  SET  nom_de_colonne_modifiée1 = valeur1 , nom_de_colonne_modifiée2 = valeur2 WHERE condition;`**
 
 ## 2. Ajout de nouvelles lignes
 Valérie MICHEL (qui a pour code-barre 199614051174633) souhaite emprunter le livre '1984' dont l'isbn  est 978-0547249643.
 
 Pour saisir ce nouvel emprunt dans la base de données, on **ajoute** une nouvelle ligne dans la **table** emprunt :
+
 Exécuter : 
 * `INSERT INTO emprunt(code_barre, isbn, retour) VALUES ('199614051174633', '978-0547249643', '2020-12-24');`
 
@@ -126,8 +128,11 @@ CONSEIL :
 
 Exécuter : 
 * `SELECT * FROM emprunt WHERE isbn='978-0547249643';`
+
 Après avoir vérifié que cette condition correspond bien au livre que Valérie vient de rapporter, on peut supprimer la ligne avec : 
 * `DELETE FROM emprunt WHERE isbn='978-0547249643';`
+
 Cela permet ensuite d'ajouter dans la base l'emprunt de ce livre par Julien
 * `INSERT INTO emprunt(code_barre, isbn, retour) VALUES ('782124241492509', '978-0547249643', '2020-12-31');`
+
 Cette insertion se fait alors sans provoquer d'erreur.
