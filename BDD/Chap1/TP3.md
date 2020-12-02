@@ -169,11 +169,12 @@ Noter les messages d'erreur :
 Explication :
 * la présence d'une clé étrangère sur la table `emprunt` impose une restriction lorsqu'on souhaite ajouter, supprimer ou modifier certaines lignes :
    * si on ajoutait un `emprunt` pour le code-barre 123456789012345...on aurait une incohérence dans la base de données, car ce code-barre ne correspond à aucune ligne dans la table `usager` !
-* si on supprimait de la table `usager` la ligne dont le code-barre '917547585216771'
+   * si on supprimait de la table `usager` la ligne dont le code-barre '917547585216771'
    * alors une ligne de la table `emprunt` contiendrait une **référence** sans correspondance dans la table `usager`
    * cela reviendrait à supprimer un usager qui n'a pas encore rendu tous les livres empruntés
 * l'ajout d'une clé étrangère permet de sécuriser la suppression ou la modification des données, pour préserver la cohérence des données.
 * on dit qu'une telle clé étrangère assure une **contrainte d'intégrité** de la base de données.
+   * lors de la conception d'une base de données, il convient de bien définir les contraintes portant les champs d'une table qui font **référence** à d'autres tables. 
 
 # Exercice 3
 Écrire les requêtes permettant de réaliser les objectifs suivants
