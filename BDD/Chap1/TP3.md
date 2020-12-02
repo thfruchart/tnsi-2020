@@ -75,14 +75,32 @@ Remarquer que l'exécution de la requête UPDATE modifie **3** lignes.
 ### A RETENIR
 La syntaxe d'une modification de certaines colonne dans une ou plusieurs lignes :
 
-**`UPDATE nom_de_la_table  SET  nom_de_colonne1 = valeur1 , nom_de_colonne2 = valeur2 WHERE condition`**
+**`UPDATE nom_de_la_table  SET  nom_de_colonne1 = valeur1 , nom_de_colonne2 = valeur2 WHERE condition;`**
 
 ## 2. Ajout de nouvelles lignes
-L'usager dont le code-barre est 199614051174633 souhaite emprunter le livre '1984' dont l'isbn  est 978-0547249643.
+Valérie MICHEL (qui a pour code-barre 199614051174633) souhaite emprunter le livre '1984' dont l'isbn  est 978-0547249643.
 
-Pour saisir de nouvel emprunt dans la base de données, on **ajoute** une nouvelle ligne dans la **table** emprunt :
+Pour saisir ce nouvel emprunt dans la base de données, on **ajoute** une nouvelle ligne dans la **table** emprunt :
 Exécuter : 
 * `INSERT INTO emprunt(code_barre, isbn, retour) VALUES ('199614051174633', '978-0547249643', '2020-12-24');`
 
+Puis vérifier dans la table emprunt que ce nouvel emprunt est ajouté : 
+* `SELECT * FROM emprunt WHERE code_barre='199614051174633';`
+
+Le jour où Valérie MICHEL vient retourner le livre '1984', elle croise Julien DURAND (code-barre 782124241492509) dans la bibliothèque et lui remet ce livre. 
+Julien veut l'emprunter, mais Valérie n'est pas passée à la borne de "retour des livres". 
+
+Essayer la requête : 
+* `INSERT INTO emprunt(code_barre, isbn, retour) VALUES ('782124241492509', '978-0547249643', '2020-12-31');`
+
+Noter l'erreur obtenue : `#1062 - Duplicata du champ '978-0547249643' pour la clef 'PRIMARY'`
+
+Quelques explications s'imposent : 
+* il existe dans la table `emprunt` une **clé primaire** (identifiée par le mot clé 'PRIMARY')
+* cette clé correspond ici au champ (ou colonne):  `isbn`
+* pour chaque ligne de la table, la clé primaire doit permettre d'identifier cette ligne de manière **unique**
+* ici, la clé primaire  `isbn` permet de s'assurer que deux lignes différentes de la table ne peuvent pas avoir un `isbn` identique!
+
+Pour que Julien puisse emprunter le livre, il faut d'abord que l'emprunt de Valérie soit supprimé de la table  `emprunt`.
 
 ## 3. Suppression de lignes
