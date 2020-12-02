@@ -56,7 +56,21 @@ En effet, nous avons modifié qu'une seule ligne de la table emprunt.
 
 
 #### prolonger tous les emprunts d'un usager
+On souhaite prolonger jusqu'au 18 mars 2020 tous les livres empruntés par l'usager dont le code barre est : 035184062854281
+Exécuter : 
+* `SELECT * FROM emprunt WHERE code_barre='035184062854281';`
+* `UPDATE emprunt SET retour='2020-03-18' WHERE code_barre='035184062854281';`
+* `SELECT * FROM emprunt WHERE code_barre='035184062854281';`
 
+
+
+Remarquer que l'exécution de la requête UPDATE modifie **3** lignes. 
+
+|code_barre	|isbn	|retour	|
+|:--|:--|:--|	
+|035184062854281|	978-2072762093|	2020-03-18	|
+|035184062854281|	978-2742744824|	2020-03-18	|
+|035184062854281|	978-2745989857|	2020-03-18	|
 
 
 ## 2. Ajout de nouvelles lignes
