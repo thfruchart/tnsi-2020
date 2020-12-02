@@ -155,19 +155,24 @@ Ce qui se passe :
 Exécuter **d'abord**: 
 * `ALTER TABLE emprunt ADD CONSTRAINT fk_code_barre FOREIGN KEY (code_barre) REFERENCES usager(code_barre);`
 
-**Puis** essayer la requête : 
+**Puis** essayer les requêtes :
+
+* `INSERT INTO emprunt(code_barre, isbn, retour) VALUES ('123456789012345', '978-0199555918', '2020-12-13');`
 * `DELETE FROM usager WHERE code_barre='917547585216771';`
 
-Noter le message d'erreur : 
+Noter les messages d'erreur : 
 
-#1451 - Cannot delete or update a parent row: **a foreign key constraint fails** (test.emprunt, CONSTRAINT fk_code_barre FOREIGN KEY (code_barre) REFERENCES usager (code_barre))
+#1452 - Cannot add or update a child row...  et  #1451 - Cannot delete or update a parent row: 
+
+**a foreign key constraint fails** (test.emprunt, CONSTRAINT fk_code_barre FOREIGN KEY (code_barre) REFERENCES usager (code_barre))
 
 Explication :
-* la présence d'une clé étrangère sur la table `emprunt` impose une restriction lorsqu'on souhaite supprimer ou modifier certaines lignes :
-   * si on supprimait de la table `usager` la ligne dont le code-barre '917547585216771'
+* la présence d'une clé étrangère sur la table `emprunt` impose une restriction lorsqu'on souhaite ajouter, supprimer ou modifier certaines lignes :
+   * si on ajoutait un `emprunt` pour le code-barre 123456789012345...on aurait une incohérence dans la base de données, car ce code-barre ne correspond à aucune ligne dans la table `usager` !
+* si on supprimait de la table `usager` la ligne dont le code-barre '917547585216771'
    * alors une ligne de la table `emprunt` contiendrait une **référence** sans correspondance dans la table `usager`
    * cela reviendrait à supprimer un usager qui n'a pas encore rendu tous les livres empruntés
-   * l'ajout d'une clé étrangère permet de sécuriser la suppression ou la modification des données, pour préserver la cohérence des données.
+* l'ajout d'une clé étrangère permet de sécuriser la suppression ou la modification des données, pour préserver la cohérence des données.
 * on dit qu'une telle clé étrangère assure une **contrainte d'intégrité** de la base de données.
 
 # Exercice 3
