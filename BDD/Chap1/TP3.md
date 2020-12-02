@@ -138,6 +138,18 @@ Cela permet ensuite d'ajouter dans la base l'emprunt de ce livre par Julien
 Cette insertion se fait alors sans provoquer d'erreur.
 
 # Ce que peut vérifier le système de gestion de la base de données
+## Contraintes de domaine
+essayer les requêtes : 
+* `INSERT INTO emprunt(code_barre, isbn, retour) VALUES ('654834075188732', '978-1439142677', '2020-16-12');`
+* `UPDATE livre SET annee='MMXIII' WHERE titre='Dune';`
+
+Ce qui se passe : 
+* A chaque colonne d'une table est associé un **domaine**, qui correspond à
+   * un certain **type** : entier, texte, date
+   * éventuellement une certaine **taille** : nombre de caractères d'un texte, nombre de bits d'un entier, signe d'un entier
+* Lors de chaque insertion, et de chaque modification, ces **contraintes de domaines** sont testées
+   * si les valeurs fournies sont "hors domaine", la requête n'est pas exécutée et une erreur est renvoyée
+   * lors de la conception d'une base de donnée, il est important de bien choisir le domaine défini pour chaque champ (ou colonne).
 
 ## Clé étrangère
 Exécuter **d'abord**: 
