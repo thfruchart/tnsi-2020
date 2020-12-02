@@ -15,15 +15,16 @@ CREATE TABLE auteur (a_id INT PRIMARY KEY,
 
 CREATE TABLE auteur_de (a_id INT REFERENCES Auteur(a_id),
                         isbn CHAR(14)
-                        REFERENCES Livre(isbn),
+                        REFERENCES livre(isbn),
                         PRIMARY KEY (a_id, isbn));
 
 CREATE TABLE emprunt (code_barre CHAR(15)
-                       REFERENCES Usager(code_barre),
+                       REFERENCES usager(code_barre),
                        isbn CHAR(14) PRIMARY KEY
-                       REFERENCES Livre(isbn),
+                       REFERENCES livre(isbn),
                        retour DATE NOT NULL);
 
+                                     
 INSERT INTO livre VALUES ('Les Aventures de Huckleberry Finn', 'Flammarion', '2020', '978-2081509511');
 INSERT INTO auteur VALUES (0, 'Twain', 'Mark');
 INSERT INTO auteur_de VALUES (0, '978-2081509511');
