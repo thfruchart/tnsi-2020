@@ -149,7 +149,7 @@ Ce qui se passe :
    * éventuellement une certaine **taille** : nombre de caractères d'un texte, nombre de bits d'un entier, signe d'un entier
 * Lors de chaque insertion, et de chaque modification, ces **contraintes de domaines** sont testées
    * si les valeurs fournies sont "hors domaine", la requête n'est pas exécutée et une erreur est renvoyée
-   * lors de la conception d'une base de donnée, il est important de bien choisir le domaine défini pour chaque champ (ou colonne).
+* lors de la conception d'une base de donnée, il est important de bien choisir le domaine défini pour chaque champ (ou colonne).
 
 ## Clé étrangère
 Exécuter **d'abord**: 
@@ -174,12 +174,13 @@ Explication :
    * cela reviendrait à supprimer un usager qui n'a pas encore rendu tous les livres empruntés
 * l'ajout d'une clé étrangère permet de sécuriser la suppression ou la modification des données, pour préserver la cohérence des données.
 * on dit qu'une telle clé étrangère assure une **contrainte d'intégrité** de la base de données.
-   * lors de la conception d'une base de données, il convient de bien définir les contraintes portant les champs d'une table qui font **référence** à d'autres tables. 
+* lors de la conception d'une base de données, il convient de bien définir les contraintes portant les champs d'une table qui font **référence** à d'autres tables. 
 
 # Exercice 3
 Écrire les requêtes permettant de réaliser les objectifs suivants
 1. Inscrire un nouvel usager : vous !
 2. Effectuer pour vous-même un emprunt, pour le livre que vous choisissez, et pour une durée de deux semaines. 
-3. Effectuer pour vous-même l'emprunt d'un livre rendu par un autre usager : il faudra donc effectuer deux requêtes.
+3. Prolonger cet emprunt d'une semaine.
+4. Effectuer pour vous-même l'emprunt d'un livre rendu par un autre usager : il faudra donc effectuer deux requêtes.
    1. la première pour "retourner le livre", rendu par l'autre usager.
    2. la deuxième pour "emprunter le livre" à votre tour. 
