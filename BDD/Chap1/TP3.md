@@ -170,3 +170,10 @@ Explication :
    * l'ajout d'une clé étrangère permet de sécuriser la suppression ou la modification des données, pour préserver la cohérence des données.
 * on dit qu'une telle clé étrangère assure une **contrainte d'intégrité** de la base de données.
 
+# Exercice 3
+Écrire les requêtes permettant de réaliser les objectifs suivants
+1. Inscrire un nouvel usager : vous !
+2. Effectuer pour vous-même un emprunt, pour le livre que vous choisissez, et pour une durée de deux semaines. 
+3. Effectuer pour vous-même l'emprunt d'un livre rendu par un autre usager : il faudra donc effectuer deux requêtes.
+   1. la première pour "retourner le livre", rendu par l'autre usager.
+   2. la deuxième pour "emprunter le livre" à votre tour. 
