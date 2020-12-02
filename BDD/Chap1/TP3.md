@@ -72,6 +72,10 @@ Remarquer que l'exécution de la requête UPDATE modifie **3** lignes.
 |035184062854281|	978-2742744824|	2020-03-18	|
 |035184062854281|	978-2745989857|	2020-03-18	|
 
+### A RETENIR
+La syntaxe d'une modification de certaines colonne dans une ou plusieurs lignes :
+
+**`UPDATE nom_de_la_table  SET  nom_de_colonne1 = valeur1 , nom_de_colonne2 = valeur2 WHERE condition`**
 
 ## 2. Ajout de nouvelles lignes
 
