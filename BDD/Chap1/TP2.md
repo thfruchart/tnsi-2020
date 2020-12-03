@@ -48,7 +48,7 @@ Dans cette requête,
    * titre du livre
    * date de retour (de la table emprunt)
 
-Il est possible de préciser la recherche en ajoutant une clause `WHERE`, comme dans l'exemple ci-dessous qui affiche le nom prénom et titre pour les emprunts dont la date de retour est fixée au premier janvier 2020 (cette date est notée au format AAAA-JJ-MM donc 2020-01-01)
+Il est possible de préciser la recherche en ajoutant une clause `WHERE`, comme dans l'exemple ci-dessous qui affiche le nom prénom et titre pour les emprunts dont la date de retour est fixée au premier janvier 2020 (cette date est notée au format AAAA-MM-JJ donc 2020-01-01)
 * `SELECT usager.nom, usager.prenom, livre.titre, emprunt.retour FROM usager JOIN emprunt ON usager.code_barre = emprunt.code_barre JOIN livre ON emprunt.isbn = livre.isbn WHERE emprunt.retour='2020-01-01';`
 
 # Exercice 2
