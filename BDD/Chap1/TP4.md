@@ -23,7 +23,7 @@ Effectivement, la sous requête :
 
 renvoie deux lignes, avec les noms de deux auteurs Uderzo et Goscini.
 
-Dans ce cas la clause WHERE utiliser la condition :  nom **IN** (SELECT ...
+Dans ce cas la clause WHERE utilisera la condition :  nom **IN** (SELECT ...
 * `SELECT titre FROM livre JOIN auteur_de ON auteur_de.isbn = livre.isbn JOIN auteur ON auteur.a_id = auteur_de.a_id WHERE nom IN (SELECT nom FROM auteur JOIN auteur_de ON auteur.a_id = auteur_de.a_id JOIN livre ON auteur_de.isbn = livre.isbn WHERE livre.titre= "Le devin");`
 
 # Exercice : trouver les titres de tous les ouvrages NON empruntés
