@@ -4,6 +4,8 @@ CREATE TABLE usager (nom VARCHAR(90) NOT NULL, prenom VARCHAR(90) NOT NULL,
                            email VARCHAR(60) NOT NULL,
                            code_barre CHAR(15) PRIMARY KEY);
 
+ALTER TABLE usager ADD UNIQUE(email);
+
 CREATE TABLE livre (titre VARCHAR(300) NOT NULL,
                      editeur VARCHAR(90) NOT NULL,
                      annee INT NOT NULL,
