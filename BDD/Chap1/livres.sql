@@ -22,8 +22,9 @@ ALTER TABLE auteur_de ADD CONSTRAINT fk_auteur_id FOREIGN KEY (a_id) REFERENCES 
 
 
 CREATE TABLE emprunt (code_barre CHAR(15),
-                       isbn CHAR(14) PRIMARY KEY,
+                       isbn CHAR(14),
                        retour DATE NOT NULL);
+ALTER TABLE emprunt ADD PRIMARY KEY(isbn);
 ALTER TABLE emprunt ADD CONSTRAINT fk_usager_code_barre FOREIGN KEY (code_barre) REFERENCES usager(code_barre);
 ALTER TABLE emprunt ADD CONSTRAINT fk_livre_isbn FOREIGN KEY (isbn) REFERENCES livre(isbn);
 
