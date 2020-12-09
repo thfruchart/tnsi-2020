@@ -50,10 +50,18 @@ Bien garder en mémoire la structure :  `SELECT ... FROM ... [JOIN... ON ...] WH
 4. j’ajoute les restriction manquantes, à savoir, je me demande : dois-je éliminer des lignes ?  `WHERE`
 5. ça y est : je peux finaliser la requête, en pensant au `;`
 
-# Questions
-Pour chacune des questions ci-dessous, écrire la requête SQL en ligne de commande:
+
+Pour chacune des questions ci-dessous, écrire **une** requête SQL en ligne de commande:
 * utiliser un éditeur (comme NotePad++ pour écrire votre "brouillon")
 * tester la requête en ligne de commande
 * corriger éventuellement la requête jusqu'à ce qu'elle soit correcte.
 
-1. 
+# Questions
+1. Combien y a-t-il d'animaux dans le zoo?
+2. Quelles sont les différentes races présentes dans le zoo?
+5. Quelle est la moyenne (AVG) des salaires des personnels ?
+6. Quelle est la moyenne (AVG) des salaires des personnels de moins de 30 ans ?
+7. Quelle est la moyenne (AVG) des salaires des personnels de plus de 30 ans ?
+3. Combien y a-t-il de pingouins?
+4. Quels sont les pseudos des loups ?
+
