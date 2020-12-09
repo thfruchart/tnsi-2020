@@ -59,9 +59,13 @@ Pour chacune des questions ci-dessous, écrire **une** requête SQL en ligne de 
 # Questions
 1. Combien y a-t-il d'animaux dans le zoo?
 2. Quelles sont les différentes races présentes dans le zoo?
+1. Afficher la liste des membres du personnel, trié par fonction puis par ordre alphabétique de nom.
 5. Quelle est la moyenne (AVG) des salaires des personnels ?
 6. Quelle est la moyenne (AVG) des salaires des personnels de moins de 30 ans ?
 7. Quelle est la moyenne (AVG) des salaires des personnels de plus de 30 ans ?
 3. Combien y a-t-il de pingouins?
 4. Quels sont les pseudos des loups ?
+1. Donnez le nom et le prénom de toutes les personnes qui peuvent soigner les chats.
+2. Qui peut soigner Lizzie ?
+
 
