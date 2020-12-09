@@ -7,27 +7,40 @@ Vous allez travailler avec une base Zoo dans laquelle il y a :
    * le type de nourriture que cette race mange à choisir entre les valeurs 'Carnivore','Herbivore','Omnivore', 
    * sa durée de vie moyenne (en année), 
    * et enfin si cet animal est aquatique ou non.
-2. Une table **Animaux** qui contient les champs suivants : un identifiant (clé primaire), 
-la race : clé étrangère  qui fait référence à la clé primaire de la table Races, la date de naissance (qui peut être null), le sexe (à choisir entre 'M' et 'F' et peut
-être null aussi), un pseudo (son nom, non null) et un commentaire éventuel (peut être
-null).
-c) Une table Personnels qui stocke le personnel du Zoo (soigneur, nettoyeurs…) et contient
-les champs suivants : un identifiant (clé primaire), le nom (non null), le prénom (non
-null), la date de naissance (non null), le sexe ('H'/'F') la fonction (le nom d'un métier, non
-null) et le salaire (nombre réel à 5 chiffres avant la virgule et 2 chiffres après comme
-15263,25 / non null).
-d) Une table Enclos qui contient les champs suivants : un identifiant qui correspond à sa
-position codée sous la d'une lettre et de 2 chiffres (ex : A04) c'est la clé primaire, le nom
-de l'enclos, sa capacité maximale d'animaux (non null), sa taille (en m², peut être null),
-un booléen indiquant la présence d'eau ou non et enfin, la référence à un membre du
-personnel, responsable de l'enclos.
-e) Une table Loc_animaux qui stocke la position des animaux. Elle est constituée de 5
-champs : un identifiant (numérique, clé primaire artificielle), la référence à un animal
-(non null), la référence à un enclos (peut être null), la date d'arrivée et de sortie de
-l'enclos (peut être null).
-f) Une table Soigneurs qui contient la liste des personnels qui peuvent soigner une race
-d'animal donnée. La table contient un identifiant (clé primaire numérique artificielle),
-une référence vers un personnel et une référence vers une race.
+2. Une table **Animaux** qui contient les champs suivants : 
+   * un identifiant (clé primaire), 
+   * la race : clé étrangère  qui fait référence à la clé primaire de la table Races, 
+   * la date de naissance (qui peut être null), 
+   * le sexe (à choisir entre 'M' et 'F' et peut être null aussi),
+   * un pseudo  
+   * et un commentaire éventuel (peut être null).
+3. Une table Personnels qui stocke le personnel du Zoo (soigneur, nettoyeurs…) et contient
+les champs suivants : 
+   * un identifiant (clé primaire), 
+   * le nom (non null), 
+   * le prénom (non null), 
+   * la date de naissance (non null), 
+   * le sexe ('H'/'F') 
+   * la fonction (le nom d'un métier, non null) 
+4. Une table Enclos qui contient les champs suivants : 
+   * un identifiant qui correspond à sa position codée sous la d'une lettre et de 2 chiffres (ex : A04) c'est la clé primaire, 
+   * le nom de l'enclos, 
+   * sa capacité maximale d'animaux (non null), 
+   * sa taille (en m², peut être null),
+   * un booléen indiquant la présence d'eau ou non 
+   * et enfin, la référence à un membre du personnel, responsable de l'enclos.
+5.  Une table Loc_animaux qui stocke la position des animaux. Elle est constituée de 5
+champs : 
+   * un identifiant numérique (clé primaire), 
+   * la référence à un animal (clé étrangère)
+   * la référence à un enclos (peut être null), 
+   * la date d'arrivée 
+   * et de sortie de l'enclos (peut être null si l'animal est encore dans l'enclos).
+6.  Une table Soigneurs qui contient la liste des personnels qui peuvent soigner une race
+d'animal donnée. La table contient 
+   * un identifiant (clé primaire),
+   * une référence vers un personnel (clé étrangère)
+   * et une référence vers une race (clé étrangère).
 
 ## Quelques conseils
 Bien garder en mémoire la structure :  `SELECT ... FROM ... [JOIN... ON ...] WHERE ...`
