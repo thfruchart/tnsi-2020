@@ -9,7 +9,7 @@ Vous allez travailler avec une base Zoo dans laquelle il y a :
    * et enfin si cet animal est aquatique ou non.
 2. Une table **Animaux** qui contient les champs suivants : 
    * un identifiant (clé primaire), 
-   * la race : clé étrangère  qui fait référence à la clé primaire de la table Races, 
+   * la race (clé étrangère)  qui fait référence à la clé primaire de la table Races, 
    * la date de naissance (qui peut être null), 
    * le sexe (à choisir entre 'M' et 'F' et peut être null aussi),
    * un pseudo  
