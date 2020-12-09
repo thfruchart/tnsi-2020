@@ -55,6 +55,8 @@ Pour chacune des questions ci-dessous, écrire **une** requête SQL en ligne de 
 * utiliser un éditeur (comme NotePad++ pour écrire votre "brouillon")
 * tester la requête en ligne de commande
 * corriger éventuellement la requête jusqu'à ce qu'elle soit correcte.
+   * En ligne de commande, on peut utiliser `SHOW Tables ;` pour obtenir le nom des tables 
+   * `DESCRIBE nom_table;` pour la description de tous les champs d'une table.
 
 # Questions
 1. Combien y a-t-il d'animaux dans le zoo?
@@ -67,5 +69,6 @@ Pour chacune des questions ci-dessous, écrire **une** requête SQL en ligne de 
 4. Quels sont les pseudos des loups ?
 1. Donnez le nom et le prénom de toutes les personnes qui peuvent soigner les chats.
 2. Qui peut soigner Lizzie ?
+
 
 
