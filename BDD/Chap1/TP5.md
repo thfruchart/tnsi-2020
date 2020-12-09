@@ -28,16 +28,14 @@ les champs suivants :
    * sa capacité maximale d'animaux (non null), 
    * sa taille (en m², peut être null),
    * un booléen indiquant la présence d'eau ou non 
-   * et enfin, la référence à un membre du personnel, responsable de l'enclos.
-5.  Une table Loc_animaux qui stocke la position des animaux. Elle est constituée de 5
-champs : 
+   * et enfin, la référence à un membre du personnel, responsable de l'enclos (clé étrangère).
+5.  Une table Loc_animaux qui stocke la position des animaux. Elle est constituée de 5 champs : 
    * un identifiant numérique (clé primaire), 
    * la référence à un animal (clé étrangère)
-   * la référence à un enclos (peut être null), 
+   * la référence à un enclos (clé étrangère), 
    * la date d'arrivée 
    * et de sortie de l'enclos (peut être null si l'animal est encore dans l'enclos).
-6.  Une table Soigneurs qui contient la liste des personnels qui peuvent soigner une race
-d'animal donnée. La table contient 
+6.  Une table Soigneurs qui contient la liste des personnels qui peuvent soigner une race d'animal donnée. La table contient 
    * un identifiant (clé primaire),
    * une référence vers un personnel (clé étrangère)
    * et une référence vers une race (clé étrangère).
