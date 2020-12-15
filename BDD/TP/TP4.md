@@ -29,3 +29,7 @@ Dans ce cas la clause WHERE utilisera la condition :  nom **IN** (SELECT ...
 # Exercice : trouver les titres de tous les ouvrages NON empruntés
 1. Commencer par écrire une requête donnant le titre de tous les ouvrages empruntés
 2. Ecrire une deuxième requête (qui pourra utiliser la première comme sous-requête) pour trouver la liste des ouvrages non empruntés. Indication : dans ce cas, la clause WHERE utilisera une condition **NOT IN**
+
+## Correction
+1. `SELECT titre FROM livre JOIN emprunt ON emprunt.isbn = livre.isbn;`
+2. `SELECT titre FROM livre WHERE titre NOT IN (SELECT titre FROM livre JOIN emprunt ON emprunt.isbn = livre.isbn);`
