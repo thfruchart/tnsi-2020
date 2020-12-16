@@ -1,5 +1,19 @@
 # TP en ligne de commande
 
+## connexion
+dans la barre de recherche, taper **cmd** puis exécuter : 
+
+`cd C:\xampp\mysql\bin`
+
+`mysql -h 10.10.17.25 -u nsi -p`
+
+taper le mot de passe : `nsi`
+
+`USE Zoo`
+
+
+
+## données utiles
 Schéma relationnel de la base Zoo  : 
 1. Une table **Races** qui contient les races des animaux avec les champs suivants : 
    * `id` : un identifiant (clé primaire), 
