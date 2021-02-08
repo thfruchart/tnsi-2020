@@ -20,10 +20,10 @@
 * procéder de même avec le fichier `decoupe-image2.py`
 * écrire une fonction récursive `def rotation_aux(px, x, y, t)` qui:
    * prend en arguments
-      * un tableau de pixelx px
-      * des coordonnées entières x, y
-      * un entier t (taille de la partie à faire tourner)
-   * et qui modifie le tableau t, de sorte à faire tourner d'un quart de tour les pixels de l'image situés 
-      * entre x (inclus) et x+t (exclu) en abscisse
-      * entre y (inclus) et y+t (exclu) en ordonnée
+      * un tableau de pixelx `px`
+      * des coordonnées entières `x`, `y`
+      * un entier `t` (taille de la partie à faire tourner)
+   * et qui modifie le tableau `px`, de sorte à faire tourner d'un quart de tour les pixels de l'image situés 
+      * entre `x` (inclus) et `x+t` (exclu) en abscisse
+      * entre `y` (inclus) et `y+t` (exclu) en ordonnée
    * on écrira cette fonction de manière récursive
