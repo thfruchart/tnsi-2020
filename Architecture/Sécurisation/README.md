@@ -10,3 +10,6 @@
 ## Chiffrement asymétrique
 * [fiche méthode (page2)](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Fiche%20m%C3%A9thode%20chiffrement.pdf)
 * [activité 2](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Activit%C3%A9-Chiffrement-ASYMETRIQUE.pdf)
+
+## Le protocole HTTPS
+* voir le paragraphe dédié sur la [page suivante] (https://pixees.fr/informatiquelycee/n_site/nsi_term_archi_secu.html)
