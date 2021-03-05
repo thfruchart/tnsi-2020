@@ -4,9 +4,9 @@
 
 ## Chiffrement symétrique
 * [fiche méthode (page1)](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Fiche%20m%C3%A9thode%20chiffrement.pdf)
-* [activité](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Activit%C3%A9-Chiffrement-SYMETRIQUE.pdf)
+* [activité 1](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Activit%C3%A9-Chiffrement-SYMETRIQUE.pdf)
 
 
 ## Chiffrement asymétrique
-* [fiche méthode (page1)](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Fiche%20m%C3%A9thode%20chiffrement.pdf)
-* [activité](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Activit%C3%A9-Chiffrement-ASYMETRIQUE.pdf)
+* [fiche méthode (page2)](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Fiche%20m%C3%A9thode%20chiffrement.pdf)
+* [activité 2](https://github.com/thfruchart/tnsi-2020/blob/master/Architecture/S%C3%A9curisation/Activit%C3%A9-Chiffrement-ASYMETRIQUE.pdf)
