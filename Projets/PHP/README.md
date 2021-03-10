@@ -1,3 +1,6 @@
+# Le site de référence
+https://www.php.net/manual/fr/langref.php
+
 # Quelques exemples élémentaires
 1. Hello
    * hello.php
