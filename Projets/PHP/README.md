@@ -1,4 +1,11 @@
 # Quelques exemples élémentaires
 1. Hello
-2. Formulaire et calcul
-3. Table de sept
+   * hello.php
+3. Formulaire et calcul
+   * form.html
+   * php-calcul.php
+5. Table de sept
+   * index.php
+   * table-de-sept.php
+6. exemple de get
+   * php-get.php
