@@ -12,6 +12,10 @@
 - Chap08 : [Arbres binaires](https://github.com/thfruchart/tnsi-2020/tree/master/Chap08)
 - Chap09 : [Arbres binaires de recherche](https://github.com/thfruchart/tnsi-2020/tree/master/Chap09)
 - Chap10 : [Graphes](https://github.com/thfruchart/tnsi-2020/tree/master/Chap10)
+- Chap11 : [Parcours d'un graphe](https://github.com/thfruchart/tnsi-2020/tree/master/Chap11)
+- Chap12 : [Diviser pour régner](https://github.com/thfruchart/tnsi-2020/tree/master/Chap12)
+- Chap13 : [Programmation dynamique](https://github.com/thfruchart/tnsi-2020/tree/master/Chap13)
+- Chap14 : [Algorithme de Boyer-Moore](https://github.com/thfruchart/tnsi-2020/tree/master/Chap14)
 
 
 ## Lien vers QCM
