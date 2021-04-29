@@ -16,6 +16,7 @@
 - Chap12 : [Diviser pour régner](https://github.com/thfruchart/tnsi-2020/tree/master/Chap12)
 - Chap13 : [Programmation dynamique](https://github.com/thfruchart/tnsi-2020/tree/master/Chap13)
 - Chap14 : [Algorithme de Boyer-Moore](https://github.com/thfruchart/tnsi-2020/tree/master/Chap14)
+- Chap15 : [Calculabilité-Décidabilité](https://github.com/thfruchart/tnsi-2020/tree/master/Chap15)
 
 
 ## Lien vers QCM
