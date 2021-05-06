@@ -21,3 +21,9 @@ WHERE ( reservation.arrivee>'2021/05/15' OR reservation.depart<'2021/04/02') OR 
 LEFT JOIN  comporte ON comporte.idChambre=chambre.id
 LEFT JOIN reservation ON reservation.id=comporte.idReservation
 WHERE NOT( reservation.arrivee>'2021/07/15' OR reservation.depart<'2021/07/02');```
+
+## chambres disponibles
+```SELECT * FROM `chambre` WHERE chambre.id NOT IN (SELECT chambre.id FROM chambre
+LEFT JOIN  comporte ON comporte.idChambre=chambre.id
+LEFT JOIN reservation ON reservation.id=comporte.idReservation
+WHERE NOT( reservation.arrivee>'2021/07/15' OR reservation.depart<'2021/07/02'));```
