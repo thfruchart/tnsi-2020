@@ -14,5 +14,4 @@ VALUES (1, (SELECT chambre.id FROM chambre WHERE chambre.numero="C21") );```
 ```SELECT * FROM chambre
 LEFT JOIN  comporte ON comporte.idChambre=chambre.id
 LEFT JOIN reservation ON reservation.id=comporte.idReservation
-
 WHERE ( reservation.arrivee>'2021/05/15' OR reservation.depart<'2021/04/02') OR reservation.arrivee IS NULL;```
