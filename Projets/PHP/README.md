@@ -12,3 +12,7 @@ https://www.php.net/manual/fr/langref.php
    * table-de-sept.php
 6. exemple de get
    * php-get.php
+
+
+## Fonctions utiles
+* [insert-id](https://www.php.net/manual/fr/function.mysql-insert-id.php)
