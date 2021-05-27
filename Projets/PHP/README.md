@@ -15,4 +15,4 @@ https://www.php.net/manual/fr/langref.php
 
 
 ## Fonctions utiles
-* [insert-id](https://www.php.net/manual/fr/function.mysql-insert-id.php)
+* [pdo--lastinsert-id](https://riptutorial.com/php/example/20534/pdo--lastinsertid--)
