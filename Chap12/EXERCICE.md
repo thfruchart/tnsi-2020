@@ -15,7 +15,7 @@
 * ouvrir dans EduPython le fichier `decoupe-image.py`
    * analyser le code
    * exécuter le programme
-   * visualiser le fichier `decoupage2.jpg`
+   * visualiser le fichier `decoupage.jpg`
    * comprendre ce que fait ce programme
 * procéder de même avec le fichier `decoupe-image2.py`
 * écrire une fonction récursive `def rotation_aux(px, x, y, t)` qui:
